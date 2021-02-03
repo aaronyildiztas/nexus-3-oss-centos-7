@@ -1,19 +1,19 @@
-- hosts: nexus
+- hosts: all
   tasks:
-  # 1st Part
-  - name: Prerequisites for Nexus
-    import_role:
-      name: prerequisites-role-nexus
+  #1st Part
+  # - name: Prerequisites for Nexus
+  #   import_role:
+  #     name: prerequisites-role-nexus
 
-  #  # 2nd Part
+   # 2nd Part
   # - name:  Java-1.8.0-openjdk && Java-1.8.0-openjdk-devel
   #   import_role:
   #     name: java-role-nexus
 
-  #  # 3rd Part
-  # - name: Nexus Repository Manager OSS Version 3.X 
-  #   import_role:
-  #     name: nexus3-oss-role
+   # 3rd Part
+    - name: Nexus Repository Manager OSS Version 3.X 
+      import_role:
+        name: nexus3-oss-role
 
   #  # 4th Part
   # - name: Apache Installation

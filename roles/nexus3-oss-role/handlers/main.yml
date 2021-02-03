@@ -1,2 +1,12 @@
----
-# handlers file for nexus3-oss-role
+# ---
+# # handlers file for nexus3-oss-role
+# ---
+# - name: start nexus
+#   service: 
+#     name: nexus 
+#     state: started
+
+# - name: restart nexus
+#   service: 
+#     name: nexus 
+#     state: restarted

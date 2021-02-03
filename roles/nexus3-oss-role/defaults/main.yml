@@ -1,2 +1,8 @@
----
-# defaults file for nexus3-oss-role
+
+nexus_oss_group: nexus
+nexus_oss_user: nexus
+nexus_oss_installation_dir: /opt/srv/nexus
+nexus_oss_working_dir: /opt/data/nexus
+nexus_oss_context_path: /nexus
+#nexus_oss_version: '3.29.2-02'
+nexus_oss_port: 8081

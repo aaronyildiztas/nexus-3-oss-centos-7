@@ -1,2 +1,5 @@
 [nexus]
-Nexus ansible_host=67.205.150.246
+Nexus ansible_host=64.227.13.225
+
+[ubuntu]
+Ubuntu-Nexus ansible_host=162.243.165.171

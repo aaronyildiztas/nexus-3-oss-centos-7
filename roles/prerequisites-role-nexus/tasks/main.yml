@@ -1,2 +1,16 @@
 ---
 # tasks file for prerequisite
+- name: Install Prerequisites
+  when: ansible_os_family == "RedHat"
+  yum: name={{ item }} state=latest
+  loop: [ 'epel-release', 'vim', 'wget', 'unzip']
+  
+
+- name: Install prerequisites
+  when: ansible_os_family == 'Debian'
+  apt: name=aptitude update_cache=yes state=latest force_apt_get=yes
+
+- name: install requirements
+  when: ansible_os_family == 'Debian'
+  apt: name={{item}} state=latest update_cache=true
+  loop: [ 'vim', 'wget', 'unzip' ]
